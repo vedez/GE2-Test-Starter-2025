@@ -2,7 +2,7 @@
 
 This is what you have to make:
 
-[![Video](http://img.youtube.com/vi/pJcXjwxruRI/0.jpg)](http://www.youtube.com/watch?pJcXjwxruRI)
+[![Video](http://img.youtube.com/vi/pJcXjwxruRI/0.jpg)](https://www.youtube.com/watch?v=pJcXjwxruRI)
 
 Fork this repo. Clone the repo to your computer.
 
