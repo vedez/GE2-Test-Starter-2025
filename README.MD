@@ -11,11 +11,12 @@ Fork this repo. Clone the repo to your computer.
 - Pressing P causes upward force on  the drone. 
 - Pressing W and S causes foward and back force
 - Pressing A and D rotates the drone 
-- The props speeed up and slow to a stop when force is applied
+- The props speeed up to a max speed when the force is applied and slow to a stop when force is removed 
 - The camera lerps to a position behind the drone and looks at it
 
 ## Tips
 - Use a RigidBody3D for the drone body
+- You don't need to use steering behaviors 
 - Use a subscene for the prop arm
 - Use a subscene for the drone and instiantiate it in a main scene
 - Commit often
