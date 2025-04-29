@@ -1,4 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b1mt883kcp3i"]
+[gd_scene load_steps=10 format=3 uid="uid://b1mt883kcp3i"]
+
+[ext_resource type="PackedScene" uid="uid://hugxx74j6c7k" path="res://drone.tscn" id="1_jgr37"]
+[ext_resource type="Script" uid="uid://bti3p2pkwrmb5" path="res://drone.gd" id="2_nb8mf"]
+[ext_resource type="PackedScene" uid="uid://bdxrhsi75m54m" path="res://prop_arm.tscn" id="2_qrxkg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jgr37"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -40,4 +44,16 @@ mesh = SubResource("PlaneMesh_qhlfa")
 shape = SubResource("WorldBoundaryShape3D_jgr37")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.10388, 3.01379)
+transform = Transform3D(0.0356249, -0.109079, -0.993394, 0.01192, 0.994001, -0.108719, 0.999294, -0.00796822, 0.0367114, -9.62306, 2.10388, -0.0591729)
+visible = false
+
+[node name="drone" parent="." instance=ExtResource("1_jgr37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0168, 0)
+script = ExtResource("2_nb8mf")
+
+[node name="Camera3D" type="Camera3D" parent="drone"]
+transform = Transform3D(0.042643, 0, -0.99909, 0, 1, 0, 0.99909, 0, 0.042643, -8.97817, 0, 0)
+
+[node name="propArm" parent="." instance=ExtResource("2_qrxkg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0733559, 4.33094, 0)
+visible = false

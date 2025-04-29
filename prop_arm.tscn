@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdxrhsi75m54m"]
+
+[ext_resource type="Script" uid="uid://c2kkdf0pctcvb" path="res://prop_arm.gd" id="1_cdsh1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pgqp7"]
+albedo_color = Color(0.535109, 0.275989, 0.358206, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2lkh8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cdsh1"]
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="propArm" type="Node3D"]
+script = ExtResource("1_cdsh1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.28558, 0, -0.306418, 0, 0.2, 0, 1.53209, 0, 0.257115, 2.0457, 0, 1.06195)
+material_override = SubResource("StandardMaterial3D_pgqp7")
+mesh = SubResource("BoxMesh_2lkh8")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.941471, 0, 0.0674191, 0, 0.2, 0, -0.337095, 0, 0.188294, 2.42597, 0.199222, 1.51012)
+material_override = SubResource("StandardMaterial3D_cdsh1")
+mesh = SubResource("BoxMesh_2lkh8")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.289032, 0, -0.191464, 0, 0.2, 0, 0.957319, 0, 0.0578064, 2.42597, 0.199222, 1.51012)
+material_override = SubResource("StandardMaterial3D_cdsh1")
+mesh = SubResource("BoxMesh_2lkh8")
+skeleton = NodePath("")
