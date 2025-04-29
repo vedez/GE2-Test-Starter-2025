@@ -27,7 +27,7 @@ Fork this repo. Clone the repo to your computer.
 |------|-------|
 | Creating the prop | 20 marks |
 | Creating the drone and adding the props | 20 marks |
-| Driving the drone | 20 marks |
+| Flying the drone | 20 marks |
 | Implementing the camera behavior | 20 marks |
 | Any other cool thing | 20 marks |
 
